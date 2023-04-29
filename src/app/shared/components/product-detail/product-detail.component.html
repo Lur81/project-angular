@@ -1,0 +1,21 @@
+
+ <div [ngClass]="{'product__container-block': !style,'product__container-list': style}">
+    <img *ngIf="product.image; else defaultImage" [ngClass]="{'product__image-block': !style,'product__image-list': style}" src="{{product.image}}" alt="{{product.name}}">
+    <ng-template #defaultImage>
+        <img [ngClass]="{'product__image-block': !style,'product__image-list': style}" src="../../../../assets/nodisponible.png" alt="defaultImage">
+    </ng-template>
+    <div [ngClass]="{'product__top-block':!style, 'product__top-list': style}">
+        <h2 [ngClass]="{'product__top-name-block': !style,'product__top-name-list': style}">{{product.name}}</h2>
+        <p [ngClass]="{'product__top-price-block': !style,'product__top-price-list': style}">${{product.price}}</p>
+        <p [ngClass]="{'product__top-description-block': !style,'product__top-description-list': style}">{{product.description}}</p>
+    </div>
+    
+    <div [ngClass]="{'product__bottom-block':!style, 'product__bottom-list': style}">
+
+        <app-rating-star [ngClass]="{'product__bottom-valoration-block': !style,'product__bottom-valoration-list': style}" [rating]="product.stars"></app-rating-star>
+        <!-- <p [ngClass]="{'product__bottom-valoration-block': !style,'product__bottom-valoration-list': style}">{{product.stars}}</p> -->
+        <!-- <p-rating [ngClass]="{'product__bottom-valoration-block': !style,'product__bottom-valoration-list': style}" [(ngModel)]="product.stars" [readonly]="true" [cancel]="false"></p-rating> -->
+        <button [ngClass]="{'product__bottom-delete-block': !style,'product__bottom-delete-list': style}" (click)="delete(product.id)"><img src="./assets/trash.png" alt="Eliminar" title="Eliminar"></button>
+        <button [ngClass]="{'product__bottom-edit-block': !style,'product__bottom-edit-list': style}" routerLink="/products/{{product.id}}">Editar</button> 
+    </div>
+</div>

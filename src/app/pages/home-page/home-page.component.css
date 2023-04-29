@@ -1,0 +1,23 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.0275em;
+  line-height: 150%;
+}
+.home__title {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 65px;
+}
+.home__paragraph-title {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+.home__paragraph-text {
+  font-weight: 300;
+}
+.home .italic {
+  font-style: italic;
+}/*# sourceMappingURL=home-page.component.css.map */

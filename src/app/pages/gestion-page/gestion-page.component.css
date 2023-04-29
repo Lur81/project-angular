@@ -1,0 +1,61 @@
+/* .main {
+  background-color: #EEEEEE;
+  padding: 85px;
+}
+.main__contenedor {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 20px 25px;
+} */
+
+.title {
+  display: flex;
+  margin-bottom: 20px;
+  position: relative;
+  left: 5%;
+  font-weight: 700;
+}
+
+.create {
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 700;
+}
+.create__form {
+  width: 60%;
+  padding-left: 20px;
+  border-right: 1px solid #F89F21;
+}
+.create__created {
+  padding-left: 30px;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.items {
+  font-size: 12px;
+  line-height: 143%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  font-style: initial;
+}
+.items__input {
+  padding: 5px;
+  width: 350px;
+}
+.items__button {
+  padding: 8px;
+  background: #F89F21;
+  border: 1px solid #F89F21;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  width: 120px;
+  /* position: relative;
+  left: 50%; */
+}/*# sourceMappingURL=gestion-page.component.css.map */

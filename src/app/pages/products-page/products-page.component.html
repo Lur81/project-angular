@@ -1,0 +1,24 @@
+<div class="gallery">
+    <div class="gallery__bar">
+        <div class="gallery__bar-title"><p>Listado de productos ({{products.length}})</p></div>
+        <div class="gallery__bar-menu">
+            <div class="gallery__bar-menu-stylelist">
+                <button [ngClass]="{'button': !style, 'button-click':style}" (click)= stylePrint(list)><img src="../../../assets/lista.png"></button>
+                <button [ngClass]="{'button': style, 'button-click':!style}" (click)= stylePrint(grid)><img src="../../../assets/cuadricula.png"></button>
+            </div>
+            <div class="gallery__bar-menu-searcher"><input name="name" type="text" placeholder="Buscador" [(ngModel)]="searchProduct" (ngModelChange)="onSearch($event)"></div>
+        </div>
+    </div>
+    <div class="gallery__products">    
+        <div class="gallery__products-card" *ngFor="let item of products">
+            <app-product-detail [product]="item" [style]="style"></app-product-detail>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="gallery__bar-menu">
+
+

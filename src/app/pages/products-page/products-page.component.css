@@ -1,0 +1,65 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery__bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.gallery__bar-title {
+  display: flex;
+  margin-bottom: 20px;
+  position: relative;
+  left: 6%;
+  font-weight: 600;
+}
+.gallery__bar-title p {
+  margin: 0;
+}
+.gallery__bar-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  right: 5%;
+}
+.gallery__bar-menu-stylelist .button {
+  font-size: 16px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.gallery__bar-menu-stylelist .button:first-child {
+  margin-right: 2px;
+}
+.gallery__bar-menu-stylelist .button img {
+  height: 20px;
+}
+.gallery__bar-menu-stylelist .button:hover {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+.gallery__bar-menu-searcher input {
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 200px;
+}
+.gallery__bar-menu-searcher input::-moz-placeholder {
+  color: #666;
+}
+.gallery__bar-menu-searcher input::placeholder {
+  color: #666;
+}
+.gallery__products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}/*# sourceMappingURL=products-page.component.css.map */

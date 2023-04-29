@@ -1,0 +1,35 @@
+
+<div class="title">
+    <h1>Creación de productos</h1>
+</div>
+<div class="create">
+    <div class="create__form">
+        <form class="items">
+            <h4>Nombre del producto</h4>
+            <p><input class="items__input" name="name" type="text" placeholder="Por ej: Tiesto para planta" [(ngModel)]="newProduct.name"></p>
+            <h4>Precio</h4>
+            <p><input class="items__input" name="price" type="text"placeholder="Por ej: 9,50" [(ngModel)]="newProduct.price"></p>
+            <h4>Descripción:</h4>
+            <p><input class="items__input" name="description" type="text" placeholder="Por ej: Lo más vendido este mes" [(ngModel)]="newProduct.description"></p>
+            <h4>Ruta de la imagen:</h4>
+            <p><input class="items__input" name="image" type="text" placeholder="Por ej: http:/blabla.com/img.jpg" [(ngModel)]="newProduct.image"></p>
+            <h4>Opiniones:</h4>
+            <p><input class="items__input" name="stars" type="text" placeholder="Por ej: 4.28" [(ngModel)]="newProduct.stars"></p>        
+        </form>
+        <p><button class="items__button" (click)= crearProducto()>Guardar</button></p>
+    </div>
+    
+    <div class="create__created">
+        <h5>Preview del producto</h5>
+        <app-product-detail [product]="newProduct"></app-product-detail>
+    </div>
+</div>
+
+<!-- <p>{{newProduct.name}}</p>
+<p>{{newProduct.price}}</p>
+<p>{{newProduct.description}}</p>
+<p>{{newProduct.image}}</p>
+<p>{{newProduct.stars}}</p> -->
+<!-- 
+<app-product-detail [product]="newProduct"></app-product-detail> -->
+
