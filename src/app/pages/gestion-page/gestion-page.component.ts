@@ -22,7 +22,6 @@ export class GestionPageComponent {
   constructor (private productsService: ProductsService){}
   
   crearProducto(){
-    alert ("Producto creado")
     console.log(this.newProduct)
     this.productsService.postProducts(this.newProduct)
     alert ("Producto creado")
