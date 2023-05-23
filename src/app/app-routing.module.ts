@@ -7,6 +7,9 @@ import { EditPageComponent } from './pages/edit-page/edit-page.component';
 
 const routes: Routes = [
   {
+    path: "", component: HomePageComponent
+  },
+  {
     path: "home", component: HomePageComponent
   },
   {
